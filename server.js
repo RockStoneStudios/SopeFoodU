@@ -54,11 +54,11 @@ app.use("/api/messaging", messagingRoute);
 app.use("/api/uploads", uploadRoute);
 
 
-const ip =  "192.168.101.71";
+
 
 const port = process.env.PORT || 3000; 
 
-app.listen(port, ip, () => {
-  console.log(`Product server listening on ${ip}:${port}`);
+app.listen(port, () => {
+  console.log(`Product server listening on :${port}`);
 });
 
